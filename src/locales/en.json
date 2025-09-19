@@ -8,6 +8,16 @@
     "sign_up_link": "Sign up"
   },
   "Marketing": {
+    "Navbar": {
+      "home": "Home",
+      "features": "Features",
+      "faq": "FAQ",
+      "testimonials": "Testimonials",
+      "pricing": "Pricing",
+      "sign_in": "Sign In",
+      "get_started": "Get Started",
+      "navigation_drawer": "Navigation Drawer"
+    },
     "Hero": {
       "beta_version": "Beta Version",
       "title": "Create Beautiful Family Newspapers",

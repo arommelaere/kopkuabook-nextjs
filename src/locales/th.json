@@ -8,6 +8,16 @@
     "sign_up_link": "ลงทะเบียน"
   },
   "Marketing": {
+    "Navbar": {
+      "home": "หน้าแรก",
+      "features": "คุณสมบัติ",
+      "faq": "คำถามที่พบบ่อย",
+      "testimonials": "คำรับรองจากลูกค้า",
+      "pricing": "ราคา",
+      "sign_in": "เข้าสู่ระบบ",
+      "get_started": "เริ่มต้นใช้งาน",
+      "navigation_drawer": "เมนูนำทาง"
+    },
     "Hero": {
       "beta_version": "รุ่นทดลอง",
       "title": "สร้างหนังสือพิมพ์ครอบครัวที่สวยงาม",
