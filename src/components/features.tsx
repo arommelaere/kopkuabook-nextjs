@@ -11,39 +11,39 @@ import {
 const features = [
   {
     icon: Goal,
-    title: "Identify Opportunities",
+    title: "Family Collaboration",
     description:
-      "Easily uncover untapped areas to explore and expand your reach effortlessly.",
+      "Invite family members to contribute photos, stories, and memories to create together.",
   },
   {
     icon: BookCheck,
-    title: "Build Authority",
+    title: "Beautiful Layout",
     description:
-      "Create valuable content that resonates, inspires trust, and positions you as an expert.",
+      "Professional newspaper layout that make your family moments look stunning in print.",
   },
   {
     icon: ChartPie,
-    title: "Instant Insights",
+    title: "Delivered Monthly",
     description:
-      "Gain immediate, actionable insights with a quick glance, enabling fast decision-making.",
+      "Receive beautifully printed newspapers delivered directly to your loved ones' doorstep.",
   },
   {
     icon: Users,
-    title: "Engage with Your Audience",
+    title: "Personal Touch",
     description:
-      "Boost audience engagement with interactive features like polls, quizzes, and forms.",
+      "Customize every aspect with personal messages, family recipes, and special announcements.",
   },
   {
     icon: FolderSync,
-    title: "Automate Your Workflow",
+    title: "Precious Memories",
     description:
-      "Streamline your processes by automating repetitive tasks, saving time and reducing effort.",
+      "Preserve and share your family's most treasured moments in a tangible, lasting format.",
   },
   {
     icon: Zap,
-    title: "Accelerate Growth",
+    title: "Easy to add Photo",
     description:
-      "Supercharge your growth by implementing strategies that drive results quickly and efficiently.",
+      "Fast photo upload or drag-and-drop makes it easy for everyone in the family to contribute.",
   },
 ];
 
@@ -54,7 +54,7 @@ const Features = () => {
       className="max-w-screen-xl mx-auto w-full py-12 xs:py-20 px-6"
     >
       <h2 className="text-3xl xs:text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight sm:max-w-xl sm:text-center sm:mx-auto">
-        Boost Your Strategy with Smart Features
+      Why Families Love Kopkuabook?
       </h2>
       <div className="mt-8 xs:mt-14 w-full mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
         {features.map((feature) => (

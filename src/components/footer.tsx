@@ -19,22 +19,22 @@ const footerSections = [
         title: "Features",
         href: "#",
       },
-      {
-        title: "Solutions",
-        href: "#",
-      },
-      {
-        title: "Tutorials",
-        href: "#",
-      },
-      {
-        title: "Pricing",
-        href: "#",
-      },
-      {
-        title: "Releases",
-        href: "#",
-      },
+      // {
+      //   title: "Solutions",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Tutorials",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Pricing",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Releases",
+      //   href: "#",
+      // },
     ],
   },
   {
@@ -44,22 +44,22 @@ const footerSections = [
         title: "About us",
         href: "#",
       },
-      {
-        title: "Careers",
-        href: "#",
-      },
-      {
-        title: "Press",
-        href: "#",
-      },
-      {
-        title: "News",
-        href: "#",
-      },
-      {
-        title: "Media kit",
-        href: "#",
-      },
+      // {
+      //   title: "Careers",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Press",
+      //   href: "#",
+      // },
+      // {
+      //   title: "News",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Media kit",
+      //   href: "#",
+      // },
       {
         title: "Contact",
         href: "#",
@@ -73,22 +73,22 @@ const footerSections = [
         title: "Blog",
         href: "#",
       },
-      {
-        title: "Newsletter",
-        href: "#",
-      },
-      {
-        title: "Events",
-        href: "#",
-      },
-      {
-        title: "Help centre",
-        href: "#",
-      },
-      {
-        title: "Tutorials",
-        href: "#",
-      },
+      // {
+      //   title: "Newsletter",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Events",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Help centre",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Tutorials",
+      //   href: "#",
+      // },
       {
         title: "Support",
         href: "#",
@@ -111,17 +111,21 @@ const footerSections = [
         href: "#",
       },
       {
-        title: "GitHub",
+        title: "Instagram",
         href: "#",
       },
-      {
-        title: "AngelList",
-        href: "#",
-      },
-      {
-        title: "Dribbble",
-        href: "#",
-      },
+      // {
+      //   title: "GitHub",
+      //   href: "#",
+      // },
+      // {
+      //   title: "AngelList",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Dribbble",
+      //   href: "#",
+      // },
     ],
   },
   {
@@ -135,18 +139,18 @@ const footerSections = [
         title: "Privacy",
         href: "#",
       },
-      {
-        title: "Cookies",
-        href: "#",
-      },
-      {
-        title: "Licenses",
-        href: "#",
-      },
-      {
-        title: "Settings",
-        href: "#",
-      },
+      // {
+      //   title: "Cookies",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Licenses",
+      //   href: "#",
+      // },
+      // {
+      //   title: "Settings",
+      //   href: "#",
+      // },
       {
         title: "Contact",
         href: "#",
@@ -180,8 +184,7 @@ const Footer = () => {
           </svg>
 
           <p className="mt-4 text-muted-foreground">
-            Design amazing digital experiences that create more happy in the
-            world.
+          Bringing families closer together through beautiful printed newspapers.
           </p>
         </div>
 
@@ -209,7 +212,7 @@ const Footer = () => {
         <span className="text-muted-foreground text-center xs:text-start">
           &copy; {new Date().getFullYear()}{" "}
           <Link href="https://shadcnui-blocks.com" target="_blank">
-            Shadcn UI Blocks
+            Kopkuabook.com
           </Link>
           . All rights reserved.
         </span>
