@@ -1,0 +1,75 @@
+{
+  "RootLayout": {
+    "home_link": "หน้าแรก",
+    "about_link": "เกี่ยวกับ",
+    "counter_link": "นับจำนวน",
+    "portfolio_link": "ผลงาน",
+    "sign_in_link": "เข้าสู่ระบบ",
+    "sign_up_link": "ลงทะเบียน"
+  },
+  "BaseTemplate": {
+    "description": "โค้ดเริ่มต้นสำหรับ Nextjs Boilerplate กับ Tailwind CSS",
+    "made_with": "สร้างโดย <author></author>."
+  },
+  "Index": {
+    "meta_title": "การนำเสนอ Next.js Boilerplate",
+    "meta_description": "Next js Boilerplate เป็นโค้ดเริ่มต้นที่สมบูรณ์แบบสำหรับโปรเจกต์ของคุณ สร้างแอปพลิเคชัน React ด้วยเฟรมเวิร์ก Next.js",
+    "sponsors_title": "ผู้สนับสนุน"
+  },
+  "Counter": {
+    "meta_title": "นับจำนวน",
+    "meta_description": "ตัวอย่างของการดำเนินการกับฐานข้อมูล",
+    "security_powered_by": "ระบบความปลอดภัย การตรวจจับบอท และการจำกัดอัตราการใช้งานโดย"
+  },
+  "CounterForm": {
+    "presentation": "ตัวนับจะถูกเก็บในฐานข้อมูลและเพิ่มค่าตามที่คุณระบุ",
+    "label_increment": "เพิ่มค่าด้วย",
+    "button_increment": "เพิ่มค่า",
+    "error_increment_range": "ค่าต้องอยู่ระหว่าง 1 ถึง 3"
+  },
+  "CurrentCount": {
+    "count": "จำนวน: {count}"
+  },
+  "About": {
+    "meta_title": "เกี่ยวกับ",
+    "meta_description": "คำอธิบายหน้าเกี่ยวกับ",
+    "about_paragraph": "ยินดีต้อนรับสู่หน้าเกี่ยวกับของเรา! เราเป็นทีมผู้มีความกระตือรือร้นและทุ่มเทให้กับการสร้างซอฟต์แวร์ที่ยอดเยี่ยม",
+    "translation_powered_by": "การแปลโดย"
+  },
+  "Portfolio": {
+    "meta_title": "ผลงาน",
+    "meta_description": "ยินดีต้อนรับสู่หน้าผลงานของฉัน!",
+    "presentation": "ยินดีต้อนรับสู่หน้าผลงานของฉัน! ที่นี่คุณจะพบกับคอลเลกชันผลงานและความสำเร็จที่รวบรวมอย่างพิถีพิถัน ผ่านพอร์ตโฟลิโอนี้ ฉันต้องการนำเสนอความเชี่ยวชาญ ความคิดสร้างสรรค์ และคุณค่าที่ฉันสามารถนำมาสู่โปรเจกต์ของคุณ",
+    "portfolio_name": "ผลงาน {name}",
+    "error_reporting_powered_by": "รายงานข้อผิดพลาดโดย",
+    "coverage_powered_by": "การครอบคลุมโค้ดโดย"
+  },
+  "PortfolioSlug": {
+    "meta_title": "ผลงาน {slug}",
+    "meta_description": "คำอธิบายผลงาน {slug}",
+    "header": "ผลงาน {slug}",
+    "content": "สร้างชุดสื่อประชาสัมพันธ์และองค์ประกอบแบรนด์สำหรับงานอีเวนต์องค์กร ออกแบบธีมที่เป็นเอกภาพทางภาพ ครอบคลุมโลโก้ โปสเตอร์ แบนเนอร์ และสินทรัพย์ดิจิทัล ผสานอัตลักษณ์แบรนด์ของลูกค้าพร้อมกับการเพิ่มแนวทางร่วมสมัยและนวัตกรรม",
+    "code_review_powered_by": "การตรวจสอบโค้ดโดย"
+  },
+  "SignIn": {
+    "meta_title": "เข้าสู่ระบบ",
+    "meta_description": "เข้าสู่ระบบบัญชีของคุณอย่างราบรื่นด้วยกระบวนการล็อกอินที่ใช้งานง่าย"
+  },
+  "SignUp": {
+    "meta_title": "ลงทะเบียน",
+    "meta_description": "สร้างบัญชีอย่างง่ายดายผ่านกระบวนการลงทะเบียนที่ใช้งานง่าย"
+  },
+  "Dashboard": {
+    "meta_title": "แดชบอร์ด",
+    "hello_message": "สวัสดี {email}!",
+    "alternative_message": "ต้องการสร้าง SaaS ของคุณเร็วขึ้นโดยใช้สแต็กเดียวกันหรือไม่? ลอง <url></url>."
+  },
+  "UserProfile": {
+    "meta_title": "โปรไฟล์ผู้ใช้"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "แดชบอร์ด",
+    "user_profile_link": "จัดการบัญชีของคุณ",
+    "sign_out": "ออกจากระบบ"
+  }
+}
