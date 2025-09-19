@@ -1,42 +1,40 @@
-import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { useTranslations } from "next-intl";
-import { Menu } from "lucide-react";
-import { Logo } from "./logo";
-import { NavMenu } from "./nav-menu";
-import { LocaleSwitcher } from "../LocaleSwitcher";
+import { getTranslations } from "next-intl/server";
+import { ClientNavigationSheet } from "./client-navbar-actions";
 
-export const NavigationSheet = () => {
-  const t = useTranslations('Marketing.Navbar');
+type NavigationSheetProps = {
+  isAuthenticated?: boolean;
+  locale: string;
+};
+
+export async function NavigationSheet({ isAuthenticated = false, locale = "en" }: NavigationSheetProps) {
+  const marketingT = await getTranslations({
+    locale,
+    namespace: 'Marketing.Navbar'
+  });
+  const dashboardT = await getTranslations({
+    locale,
+    namespace: 'DashboardLayout'
+  });
+  
+  // Prepare translation objects to pass to client components
+  const marketingNavText = {
+    sign_in: marketingT('sign_in'),
+    get_started: marketingT('get_started'),
+    navigation_drawer: marketingT('navigation_drawer')
+  };
+  
+  const dashboardText = {
+    dashboard_link: dashboardT('dashboard_link'),
+    user_profile_link: dashboardT('user_profile_link'),
+    sign_out: dashboardT('sign_out')
+  };
+  
   return (
-    <Sheet>
-      <VisuallyHidden>
-        <SheetTitle>{t('navigation_drawer')}</SheetTitle>
-      </VisuallyHidden>
-      <SheetTrigger asChild>
-        <Button variant="outline" size="icon">
-          <Menu />
-        </Button>
-      </SheetTrigger>
-      <SheetContent>
-        <Logo />
-        <NavMenu orientation="vertical" className="mt-12" />
-
-      
-
-        <div className="mt-8 space-y-4">
-          <Button variant="outline" className="w-full sm:hidden">
-            {t('sign_in')}
-          </Button>
-          <Button className="w-full xs:hidden">{t('get_started')}</Button>
-        </div>
-      </SheetContent>
-    </Sheet>
+    <ClientNavigationSheet
+      isAuthenticated={isAuthenticated}
+      locale={locale}
+      marketingNavText={marketingNavText}
+      dashboardText={dashboardText}
+    />
   );
 };

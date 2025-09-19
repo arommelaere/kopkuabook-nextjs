@@ -1,8 +1,5 @@
-import { SignOutButton } from '@clerk/nextjs';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Link from 'next/link';
-import { LocaleSwitcher } from '@/components/LocaleSwitcher';
-import { BaseTemplate } from '@/templates/BaseTemplate';
+import { setRequestLocale } from 'next-intl/server';
+import Navbar from '@/components/navbar/navbar';
 
 export default async function DashboardLayout(props: {
   children: React.ReactNode;
@@ -10,50 +7,13 @@ export default async function DashboardLayout(props: {
 }) {
   const { locale } = await props.params;
   setRequestLocale(locale);
-  const t = await getTranslations({
-    locale,
-    namespace: 'DashboardLayout',
-  });
 
   return (
-    <BaseTemplate
-      leftNav={(
-        <>
-          <li>
-            <Link
-              href="/dashboard/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('dashboard_link')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/dashboard/user-profile/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('user_profile_link')}
-            </Link>
-          </li>
-        </>
-      )}
-      rightNav={(
-        <>
-          <li>
-            <SignOutButton>
-              <button className="border-none text-gray-700 hover:text-gray-900" type="button">
-                {t('sign_out')}
-              </button>
-            </SignOutButton>
-          </li>
-
-          <li>
-            <LocaleSwitcher />
-          </li>
-        </>
-      )}
-    >
-      {props.children}
-    </BaseTemplate>
+    <div className="flex flex-col min-h-screen">
+      <Navbar locale={locale} isAuthenticated={true} />
+      <div className="flex-1 max-w-screen-xl mx-auto w-full px-4 sm:px-6 py-8">
+        {props.children}
+      </div>
+    </div>
   );
 }
