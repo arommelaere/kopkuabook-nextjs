@@ -159,5 +159,43 @@
     "dashboard_link": "Dashboard",
     "user_profile_link": "Manage your account",
     "sign_out": "Sign out"
+  },
+  "Terms": {
+    "meta_title": "Terms of Service",
+    "meta_description": "Terms of service and conditions for using Kopkuabook",
+    "title": "Terms of Service",
+    "last_updated": "Last updated: September 19, 2025",
+    "section1_title": "Acceptance of Terms",
+    "section1_content": "By accessing or using Kopkuabook, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.",
+    "section2_title": "Use License",
+    "section2_content": "Permission is granted to temporarily access the materials on Kopkuabook's website for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title.",
+    "section3_title": "Disclaimer",
+    "section3_content": "The materials on Kopkuabook's website are provided on an 'as is' basis. Kopkuabook makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties.",
+    "section4_title": "Limitations",
+    "section4_content": "In no event shall Kopkuabook or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Kopkuabook's website.",
+    "section5_title": "Revisions and Errata",
+    "section5_content": "The materials appearing on Kopkuabook's website could include technical, typographical, or photographic errors. Kopkuabook does not warrant that any of the materials on its website are accurate, complete or current.",
+    "contact_title": "Contact Us",
+    "contact_content": "If you have any questions about these Terms, please contact us at terms@kopkuabook.com."
+  },
+  "Privacy": {
+    "meta_title": "Privacy Policy",
+    "meta_description": "Privacy policy for Kopkuabook users",
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: September 19, 2025",
+    "section1_title": "Introduction",
+    "section1_content": "At Kopkuabook, we respect your privacy and are committed to protecting it through our compliance with this policy. This policy describes the types of information we may collect from you or that you may provide when you visit our website and our practices for collecting, using, maintaining, protecting, and disclosing that information.",
+    "section2_title": "Information We Collect",
+    "section2_content": "We collect several types of information from and about users of our website, including information by which you may be personally identified, such as name, email address, or billing information; and information about your internet connection and the equipment you use to access our website.",
+    "section3_title": "How We Use Your Information",
+    "section3_content": "We use information that we collect about you or that you provide to us to present our website and its contents to you, provide you with information, products, or services that you request from us, fulfill any other purpose for which you provide it, and carry out our obligations and enforce our rights arising from any contracts.",
+    "section4_title": "Disclosure of Your Information",
+    "section4_content": "We may disclose aggregated information about our users without restriction. We may disclose personal information that we collect or you provide to comply with any court order, law, or legal process, or to enforce or apply our terms of use and other agreements.",
+    "data_title": "Data Security",
+    "data_content": "We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure.",
+    "cookies_title": "Cookies and Tracking Technologies",
+    "cookies_content": "We use cookies and similar tracking technologies to track activity on our website and hold certain information to improve and analyze our services.",
+    "contact_title": "Contact Us",
+    "contact_content": "If you have any questions about this Privacy Policy, please contact us at privacy@kopkuabook.com."
   }
 }

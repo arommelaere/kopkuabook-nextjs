@@ -134,11 +134,11 @@ const getFooterSections = (t: any) => [
     links: [
       {
         title: t('terms'),
-        href: "#",
+        href: "/terms",
       },
       {
         title: t('privacy'),
-        href: "#",
+        href: "/privacy",
       },
       // {
       //   title: "Cookies",
