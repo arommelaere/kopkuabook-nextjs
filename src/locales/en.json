@@ -7,6 +7,84 @@
     "sign_in_link": "Sign in",
     "sign_up_link": "Sign up"
   },
+  "Marketing": {
+    "Hero": {
+      "beta_version": "Beta Version",
+      "title": "Create Beautiful Family Newspapers",
+      "description": "Transform your family's precious moments into stunning printed newspapers. Collaborate with loved ones to create personalized stories that connect generations.",
+      "get_started": "Get Started",
+      "watch_demo": "Watch Demo"
+    },
+    "Features": {
+      "title": "Why Families Love Kopkuabook?",
+      "family_collaboration": "Family Collaboration",
+      "family_collaboration_desc": "Invite family members to contribute photos, stories, and memories to create together.",
+      "beautiful_layout": "Beautiful Layout",
+      "beautiful_layout_desc": "Professional newspaper layout that make your family moments look stunning in print.",
+      "delivered_monthly": "Delivered Monthly",
+      "delivered_monthly_desc": "Receive beautifully printed newspapers delivered directly to your loved ones' doorstep.",
+      "personal_touch": "Personal Touch",
+      "personal_touch_desc": "Customize every aspect with personal messages, family recipes, and special announcements.",
+      "precious_memories": "Precious Memories",
+      "precious_memories_desc": "Preserve and share your family's most treasured moments in a tangible, lasting format.",
+      "easy_to_add_photo": "Easy to add Photo",
+      "easy_to_add_photo_desc": "Fast photo upload or drag-and-drop makes it easy for everyone in the family to contribute."
+    },
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to common questions about our products and services.",
+      "return_policy_q": "What is your return policy?",
+      "return_policy_a": "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "track_order_q": "How do I track my order?",
+      "track_order_a": "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "shipping_q": "Do you ship internationally?",
+      "shipping_a": "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "payment_q": "What payment methods do you accept?",
+      "payment_a": "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "damaged_item_q": "What if I receive a damaged item?",
+      "damaged_item_a": "Please contact our support team within 48 hours of delivery with photos of the damaged item. We'll arrange a replacement or refund.",
+      "support_q": "How can I contact customer support?",
+      "support_a": "You can reach our support team via email at support@example.com or through the live chat on our website. We're available 24/7 to assist you."
+    },
+    "Testimonial": {
+      "title": "Testimonials"
+    },
+    "Pricing": {
+      "title": "Pricing",
+      "most_popular": "Most Popular",
+      "monthly_plus": "Monthly++",
+      "monthly": "Monthly",
+      "bimonthly": "Bimonthly",
+      "monthly_plus_desc": "Up to 36 messages.",
+      "monthly_desc": "Up to 28 messages.",
+      "bimonthly_desc": "Up to 28 messages.",
+      "monthly_plus_feature": "One gazette every month",
+      "monthly_feature": "One gazette every month",
+      "bimonthly_feature": "One gazette every 2 weeks",
+      "subscribe_button": "Subscribe for my family"
+    },
+    "Footer": {
+      "company_description": "Bringing families closer together through beautiful printed newspapers.",
+      "product_title": "Product",
+      "overview": "Overview",
+      "features": "Features",
+      "company_title": "Company",
+      "about_us": "About us",
+      "contact": "Contact",
+      "resources_title": "Resources",
+      "blog": "Blog",
+      "support": "Support",
+      "social_title": "Social",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "legal_title": "Legal",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "copyright": "All rights reserved."
+    }
+  },
   "BaseTemplate": {
     "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
     "made_with": "Made with <author></author>."

@@ -1,35 +1,37 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Hero = () => {
+  const t = useTranslations('Marketing.Hero');
   return (
     <div className="min-h-[calc(100vh-4rem)] w-full flex items-center justify-center overflow-hidden border-b border-accent">
       <div className="max-w-screen-xl w-full flex flex-col lg:flex-row mx-auto items-center justify-between gap-y-14 gap-x-10 px-6 py-12 lg:py-0">
         <div className="max-w-xl">
           <Badge className="rounded-full py-1 border-none">
-            Beta Version
+            {t('beta_version')}
           </Badge>
           <h1 className="mt-6 max-w-[20ch] text-3xl xs:text-4xl sm:text-5xl lg:text-[2.75rem] xl:text-5xl font-bold !leading-[1.2] tracking-tight">
-            Create Beautiful Family Newspapers
+            {t('title')}
           </h1>
           <p className="mt-6 max-w-[60ch] xs:text-lg">
-          Transform your family's precious moments into stunning printed newspapers. Collaborate with loved ones to create personalized stories that connect generations.
+            {t('description')}
           </p>
           <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
             <Button
               size="lg"
               className="w-full sm:w-auto rounded-full text-base"
             >
-              Get Started <ArrowUpRight className="!h-5 !w-5" />
+              {t('get_started')} <ArrowUpRight className="!h-5 !w-5" />
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="w-full sm:w-auto rounded-full text-base shadow-none"
             >
-              <CirclePlay className="!h-5 !w-5" /> Watch Demo
+              <CirclePlay className="!h-5 !w-5" /> {t('watch_demo')}
             </Button>
           </div>
         </div>

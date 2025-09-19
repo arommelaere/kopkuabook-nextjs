@@ -5,49 +5,46 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { useTranslations } from "next-intl";
 import { PlusIcon } from "lucide-react";
 
-const faq = [
+const getFAQ = (t: any) => [
   {
-    question: "What is your return policy?",
-    answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+    question: t('return_policy_q'),
+    answer: t('return_policy_a'),
   },
   {
-    question: "How do I track my order?",
-    answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+    question: t('track_order_q'),
+    answer: t('track_order_a'),
   },
   {
-    question: "Do you ship internationally?",
-    answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+    question: t('shipping_q'),
+    answer: t('shipping_a'),
   },
   {
-    question: "What payment methods do you accept?",
-    answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+    question: t('payment_q'),
+    answer: t('payment_a'),
   },
   {
-    question: "What if I receive a damaged item?",
-    answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+    question: t('damaged_item_q'),
+    answer: t('damaged_item_a'),
   },
   {
-    question: "How can I contact customer support?",
-    answer:
-      "You can reach our support team via email at support@example.com or through the live chat on our website. We're available 24/7 to assist you.",
+    question: t('support_q'),
+    answer: t('support_a'),
   },
 ];
 
 const FAQ = () => {
+  const t = useTranslations('Marketing.FAQ');
+  const faq = getFAQ(t);
   return (
     <div id="faq" className="w-full max-w-screen-xl mx-auto py-8 xs:py-16 px-6">
       <h2 className="md:text-center text-3xl xs:text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tighter">
-        Frequently Asked Questions
+        {t('title')}
       </h2>
       <p className="mt-1.5 md:text-center xs:text-lg text-muted-foreground">
-        Quick answers to common questions about our products and services.
+        {t('subtitle')}
       </p>
 
       <div className="min-h-[550px] md:min-h-[320px] xl:min-h-[300px]">

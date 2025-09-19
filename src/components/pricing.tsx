@@ -2,48 +2,48 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import { CircleCheck } from "lucide-react";
 
-const plans = [
+const getPlans = (t: any) => [
   {
-    name: "Monthly++",
+    name: t('monthly_plus'),
     price: 349,
-    description:
-      "Up to 36 messages.",
+    description: t('monthly_plus_desc'),
     features: [
-      "One gazette every month",
+      t('monthly_plus_feature'),
     ],
-    buttonText: "Subscribe for my family",
+    buttonText: t('subscribe_button'),
   },
   {
-    name: "Monthly",
+    name: t('monthly'),
     price: 249,
     isRecommended: true,
-    description:
-      "Up to 28 messages.",
+    description: t('monthly_desc'),
     features: [
-      "One gazette every month",
+      t('monthly_feature'),
     ],
-    buttonText: "Subscribe for my family",
+    buttonText: t('subscribe_button'),
     isPopular: true,
   },
   {
-    name: "Bimonthly",
+    name: t('bimonthly'),
     price: 449,
-    description:
-      "Up to 28 messages.",
+    description: t('bimonthly_desc'),
     features: [
-      "One gazette every 2 weeks",
+      t('bimonthly_feature'),
     ],
-    buttonText: "Subscribe for my family",
+    buttonText: t('subscribe_button'),
   },
 ];
 
 const Pricing = () => {
+  const t = useTranslations('Marketing.Pricing');
+  const plans = getPlans(t);
   return (
     <div id="pricing" className="max-w-screen-lg mx-auto py-12 xs:py-20 px-6">
       <h1 className="text-4xl xs:text-5xl font-bold text-center tracking-tight">
-        Pricing
+        {t('title')}
       </h1>
       <div className="mt-8 xs:mt-14 grid grid-cols-1 lg:grid-cols-3 items-center gap-8 lg:gap-0">
         {plans.map((plan) => (
@@ -59,7 +59,7 @@ const Pricing = () => {
           >
             {plan.isPopular && (
               <Badge className="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2">
-                Most Popular
+                {t('most_popular')}
               </Badge>
             )}
             <h3 className="text-lg font-medium">{plan.name}</h3>

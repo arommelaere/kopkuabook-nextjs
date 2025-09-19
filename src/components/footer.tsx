@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { useTranslations } from "next-intl";
 import {
   DribbbleIcon,
   GithubIcon,
@@ -7,16 +8,16 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-const footerSections = [
+const getFooterSections = (t: any) => [
   {
-    title: "Product",
+    title: t('product_title'),
     links: [
       {
-        title: "Overview",
+        title: t('overview'),
         href: "#",
       },
       {
-        title: "Features",
+        title: t('features'),
         href: "#",
       },
       // {
@@ -38,10 +39,10 @@ const footerSections = [
     ],
   },
   {
-    title: "Company",
+    title: t('company_title'),
     links: [
       {
-        title: "About us",
+        title: t('about_us'),
         href: "#",
       },
       // {
@@ -61,16 +62,16 @@ const footerSections = [
       //   href: "#",
       // },
       {
-        title: "Contact",
+        title: t('contact'),
         href: "#",
       },
     ],
   },
   {
-    title: "Resources",
+    title: t('resources_title'),
     links: [
       {
-        title: "Blog",
+        title: t('blog'),
         href: "#",
       },
       // {
@@ -90,28 +91,28 @@ const footerSections = [
       //   href: "#",
       // },
       {
-        title: "Support",
+        title: t('support'),
         href: "#",
       },
     ],
   },
   {
-    title: "Social",
+    title: t('social_title'),
     links: [
       {
-        title: "Twitter",
+        title: t('twitter'),
         href: "#",
       },
       {
-        title: "LinkedIn",
+        title: t('linkedin'),
         href: "#",
       },
       {
-        title: "Facebook",
+        title: t('facebook'),
         href: "#",
       },
       {
-        title: "Instagram",
+        title: t('instagram'),
         href: "#",
       },
       // {
@@ -129,14 +130,14 @@ const footerSections = [
     ],
   },
   {
-    title: "Legal",
+    title: t('legal_title'),
     links: [
       {
-        title: "Terms",
+        title: t('terms'),
         href: "#",
       },
       {
-        title: "Privacy",
+        title: t('privacy'),
         href: "#",
       },
       // {
@@ -152,7 +153,7 @@ const footerSections = [
       //   href: "#",
       // },
       {
-        title: "Contact",
+        title: t('contact'),
         href: "#",
       },
     ],
@@ -160,6 +161,8 @@ const footerSections = [
 ];
 
 const Footer = () => {
+  const t = useTranslations('Marketing.Footer');
+  const footerSections = getFooterSections(t);
   return (
     <footer className="mt-12 xs:mt-20 dark bg-background border-t">
       <div className="max-w-screen-xl mx-auto py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-x-8 gap-y-10 px-6">
@@ -184,7 +187,7 @@ const Footer = () => {
           </svg>
 
           <p className="mt-4 text-muted-foreground">
-          Bringing families closer together through beautiful printed newspapers.
+            {t('company_description')}
           </p>
         </div>
 
@@ -214,7 +217,7 @@ const Footer = () => {
           <Link href="https://shadcnui-blocks.com" target="_blank">
             Kopkuabook.com
           </Link>
-          . All rights reserved.
+          . {t('copyright')}
         </span>
 
         <div className="flex items-center gap-5 text-muted-foreground">

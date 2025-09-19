@@ -8,6 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import { StarIcon } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -77,6 +78,7 @@ const testimonials = [
   },
 ];
 const Testimonial = () => {
+  const t = useTranslations('Marketing.Testimonial');
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -100,7 +102,7 @@ const Testimonial = () => {
       className="w-full max-w-screen-xl mx-auto py-6 xs:py-12 px-6"
     >
       <h2 className="mb-8 xs:mb-14 text-4xl md:text-5xl font-bold text-center tracking-tight">
-        Testimonials
+        {t('title')}
       </h2>
       <div className="container w-full mx-auto">
         <Carousel setApi={setApi}>
