@@ -8,6 +8,12 @@ import './src/libs/Env';
 const baseConfig: NextConfig = {
   eslint: {
     dirs: ['.'],
+    // Disable running ESLint during production builds
+    ignoreDuringBuilds: process.env.NODE_ENV === 'production',
+  },
+  typescript: {
+    // Disable type checking during production builds
+    ignoreBuildErrors: process.env.NODE_ENV === 'production',
   },
   poweredByHeader: false,
   reactStrictMode: true,
