@@ -7,7 +7,7 @@
   "scripts": {
     "dev:spotlight": "npx @spotlightjs/spotlight",
     "dev:next": "next dev --turbopack",
-    "dev": "run-p db-server:file dev:*",
+    "dev": "run-p db-server:file dev:* && start http://localhost:3000",
     "dbpull": "npx prisma db pull && npx prisma generate",
     "build:next": "next build",
     "build": "run-p db-server:memory build:* --race",
