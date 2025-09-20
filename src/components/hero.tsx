@@ -41,7 +41,7 @@ const Hero = () => {
           https://chatgpt.com/c/68ce8a5c-2594-832a-a21c-2ff69a39944e
           */}
           <Image
-            src="/showcases/kopkuabook-showcase-2.png"
+            src="/showcases/kopkuabook-showcase-4.png"
             fill
             alt=""
             className="object-cover rounded-xl"
