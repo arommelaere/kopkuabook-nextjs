@@ -135,10 +135,12 @@ const getFooterSections = (t: any) => [
       {
         title: t('terms'),
         href: "/terms",
+        rel: "nofollow",
       },
       {
         title: t('privacy'),
         href: "/privacy",
+        rel: "nofollow",
       },
       // {
       //   title: "Cookies",
@@ -200,6 +202,7 @@ const Footer = () => {
                   <Link
                     href={href}
                     className="text-muted-foreground hover:text-foreground"
+                    rel={href === "/terms" || href === "/privacy" ? "nofollow" : undefined}
                   >
                     {title}
                   </Link>
