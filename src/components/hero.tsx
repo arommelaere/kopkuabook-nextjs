@@ -36,8 +36,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative lg:max-w-lg xl:max-w-xl w-full bg-accent rounded-xl aspect-square">
+          {/* 20250920 prompt chatgpt 5: 
+          generate old lovely cultural thai couple person in their heaven wood old house with big smile showing a magic gazette (newspaper with family photos in it) open with its content pointed to the camera (I will replace with my own content)
+          https://chatgpt.com/c/68ce8a5c-2594-832a-a21c-2ff69a39944e
+          */}
           <Image
-            src="/placeholder.svg"
+            src="/showcases/kopkuabook-showcase-1.png"
             fill
             alt=""
             className="object-cover rounded-xl"
