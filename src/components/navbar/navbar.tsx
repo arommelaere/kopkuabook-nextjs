@@ -51,7 +51,7 @@ export default async function Navbar({ locale = "en", isAuthenticated = false }:
 
         <div className="flex items-center gap-3">
           <LocaleSwitcher />
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           
           {isAuthenticated ? (
             <SignOutButton>
